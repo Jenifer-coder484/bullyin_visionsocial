@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullying: Una Visión Social</title>
+    <link rel="shortcut icon" href="group_FILL0_wght400_GRAD0_opsz24.png">
+    <link rel="StyleSheet" href="styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100&family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lexend Peta', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column; /* Orientación vertical */
+        }
+
+        section {
+            display: none; /* Ocultar todas las secciones al principio */
+        }
+
+        section.active {
+            display: block; /* Mostrar la sección activa */
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px; /* Puedes ajustar la altura según tus necesidades */
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Obtener todos los enlaces del menú
+            var navLinks = document.querySelectorAll("nav a");
+
+            // Obtener todas las secciones
+            var sections = document.querySelectorAll("section");
+
+            // Asignar eventos de clic a los enlaces del menú
+            navLinks.forEach(function (link, index) {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+                    // Ocultar todas las secciones
+                    sections.forEach(function (section) {
+                        section.classList.remove("active");
+                    });
+
+                    // Mostrar solo la sección correspondiente al enlace clicado
+                    sections[index].classList.add("active");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bullying: Una Visión Social</h1>
+    </header>
+
+    <nav>
+        <a href="#Origen">Origen</a>
+        <a href="#Antecedentes">Antecedentes</a>
+        <a href="#Actores">Actores</a>
+        <a href="#Causas">Causas</a>
+        <a href="#Consecuencias">Consecuencias</a>
+        <a href="#Cortometrages">#Cortometrages</a>
+        <a href="#AyudaProfesional">Ayuda profesional</a>
+    </nav>
+
+    <section id="Origen" class="active">
+        <h2>Origen</h2>
+        <img src="Imagen1.jpg" alt="Origen">
+        <p>
+            <li>Familia</li>
+            <li>Escuela</li>
+            <li> Sociedad </li>
+        </p>
+    </section>
+
+    <section id="Antecedentes">
+        <h2>Antecedentes</h2>
+        <img src="Imagen2.jpg" alt="Antecedentes">
+        <p>Los primeros estudios que identificaron la problemática social del “Bullying” 
+            en las instituciones educativas fueron expuestos por Dan Olweus en Noruega.
+            “…Agresiones consientes y perseverantes, que estudiantes con características de intimidación como mayor fuerza física, reconocimiento, o control de grupo, empleaban para someter a sus pares por ser estos incapaces de responder o defenderse,
+             con el objetivo de generar miedos en forma de malestar o para destacar su condición dominante”
+        </p>
+    </section>
+
+    <section id="Actores">
+        <h2>Actores</h2>
+        <img src="Imagen3.jpg" alt="Actores">
+        <p>
+            <li>Victimario, acosador o “bullie” </li>
+            <li>Victimas (pasiva y provocadora)</li>
+            <li> Compañeros que presencian el maltrato, espectadores o “bystanders”</li>
+        </p>
+    </section>
+
+    <section id="Causas">
+        <h2>Causas</h2>
+        <img src="Imagen4.jpg" alt=" Causas">
+        <p>
+            <li>Factores emocionales</li>
+            <li>Ausencia de valores</li>
+            <li> Violencia o intimidacion</li>
+            <li> Falta de cultura de respeto</li>
+            <li> Cultura de violencia arraigada </li>
+        </p>
+    </section>
+
+    <section id="Consecuencias">
+        <h2>Consecuencias</h2>
+        <img src="Imagen5.jpg" alt="Consecuencias">
+        <p>
+            <li>Problemas de salud mental, emocionales, físicos, sociales, etc.</li>
+            <li>Discriminación</li>
+            <li>Exclusión social</li>
+            <li>Aislamiento</li>
+            <li> Suicidio</li>
+        </p>
+    </section>
+
+    <section id="Cortometrages" >
+        <h2>Cortometrajes</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/n7YMvAG53AA" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rUc-TIyRLVw" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- ... (otras secciones) ... -->
+
+    <section id="AyudaProfesional">
+        <h2>Ayuda profesional</h2>
+        
+        <p>
+            En caso de emergencia, puedes contactar a los siguientes servicios en México:
+            <ul>
+                <li><strong>Línea de Emergencia:</strong> 911</li>
+                <li><strong>Cruz Roja Mexicana:</strong> 065</li>
+                <li><strong>Bomberos:</strong> 068</li>
+                <li><strong>Policía Federal:</strong> 088</li>
+            </ul>
+        </p>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>Una Visión Social</p>
+    </footer>
+</body>
+</html>

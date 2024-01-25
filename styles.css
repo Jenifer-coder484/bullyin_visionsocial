@@ -1,0 +1,50 @@
+body {
+    font-family: 'Lexend Peta', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Orientación vertical */
+}
+
+section {
+    display: none; /* Ocultar todas las secciones al principio */
+}
+
+section.active {
+    display: block; /* Mostrar la sección activa */
+}
+
+/* Agrega estilos adicionales según tus necesidades */
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #000000;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
